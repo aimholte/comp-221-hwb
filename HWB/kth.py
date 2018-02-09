@@ -21,11 +21,17 @@
     # retun the list
 
 def kth(L,k):
-    if len(L) <= k:
+    if len(L) < k:
         return []
     else:
         element = [L[k -  1]]
-        return kthList + kth(L[:-1], k)
+        return element + kth(L[k:],k)
     pass
 
-print(kth([3, 4, 1, 3], 1))
+lst1 = [3, 4, 1, 3]
+for i in range(1,6):
+    print(kth(lst1, i))
+
+lst2 = ["Computer", "Science", "is", "fun", "especially", "recursion!", "Let's", "keep", "learning", "more!"]
+for i in range(1, 12):
+    print(kth(lst2, i))
