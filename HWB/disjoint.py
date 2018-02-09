@@ -34,3 +34,5 @@ print(disjoint([1/2, 1/4, 1/5], [3/4, 2/5, 1/2])) # expected output: false
 print(disjoint(["more", "programming", "here"], ["here", "is", "some", "more"])) # expected output: false
 print(disjoint(["starting", "to run out of", "ideas"], ["please", "help"])) # expected output: true
 print(disjoint([math.inf+100], [math.inf+1])) # Example of where inputs break the code...
+# print(disjoint(1, 2))
+# print(disjoint("test", "here"))

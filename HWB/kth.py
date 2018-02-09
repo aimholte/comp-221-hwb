@@ -28,3 +28,7 @@ for i in range(1,6):
 lst2 = ["Computer", "Science", "is", "fun", "especially", "recursion!", "Let's", "keep", "learning", "more!"]
 for i in range(1, 12):
     print(kth(lst2, i))
+
+print(kth("This is a test", 2))
+print(kth(10.05,2)) # code doesn't run on this input
+print(kth({'Test':2, 'Another': 10, 'Time':100}, 1))
